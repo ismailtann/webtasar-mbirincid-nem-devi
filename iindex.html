@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmail Tan - Kişisel Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bar">
+        <button class="icon" onclick="menuyuAcKapa()">☰</button>
+        
+        <div class="buttonlar" onclick="sayfaDegistir('anaSayfaPenceresi')">Ana Sayfa</div>
+        <div class="buttonlar" onclick="sayfaDegistir('hakkimdaPenceresi')">Hakkımda</div>
+        <div class="buttonlar" onclick="sayfaDegistir('projelerPenceresi')">Projelerim</div>
+        <div class="buttonlar" onclick="sayfaDegistir('odevlerPenceresi')">Ödevlerim</div>
+    </div>
+
+    <div class="yan-panel" id="yanMenu">
+        <button class="kapat-btn" onclick="menuyuAcKapa()">×</button>
+
+        <div class="profil-bolumu">
+            <img src="foto/ben.jpeg" alt="İsmail Tan"> 
+            <h3>İsmail Tan</h3>
+            <p>Yazılım Öğrencisi</p>
+        </div>
+
+        <a href="#" onclick="sayfaDegistir('anaSayfaPenceresi'); menuyuAcKapa()">Ana Sayfa</a>
+        <a href="#" onclick="sayfaDegistir('hakkimdaPenceresi'); menuyuAcKapa()">Hakkımda</a>
+        <a href="#" onclick="sayfaDegistir('projelerPenceresi'); menuyuAcKapa()">Projelerim</a>
+        <a href="#" onclick="sayfaDegistir('odevlerPenceresi'); menuyuAcKapa()">Ödevlerim</a>
+    </div>
+
+    <div id="anaSayfaPenceresi" class="sayfa-icerik">
+        <div class="hero-kutu">
+            <div class="hero-resim">
+                <img src="foto/ben.jpeg" alt="Profil">
+            </div>
+            <div class="hero-yazi">
+                <h1>Merhaba, Ben İsmail! 👋</h1>
+                <p>
+                    Teknolojiye tutkun, öğrenmeye aç bir yazılım öğrencisiyim. 
+                    Şu anda <strong>C#</strong>, <strong>Web Geliştirme</strong> ve <strong>Unity Oyun Programlama</strong> üzerine kendimi geliştiriyorum.
+                </p>
+                <p>
+                    Projelerimi sergilediğim ve kendimden bahsettiğim kişisel web siteme hoş geldiniz.
+                </p>
+                <br>
+                <button onclick="sayfaDegistir('projelerPenceresi')" class="proje-btn">
+                    Projelerimi İncele
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="hakkimdaPenceresi" class="sayfa-icerik">
+        <div class="hero-kutu">
+            <div class="hero-resim">
+                <img src="foto/ben.jpeg" alt="İsmail Tan">
+            </div>
+            <div class="hero-yazi">
+                <h1>Hakkımda</h1>
+                
+                <p>
+                    Merhaba, ben <strong>İsmail Tan</strong>. 2005 yılında İzmir/Konak’ta doğdum. Küçük yaşlardan itibaren bilgisayarlara, oyunlara ve teknolojiye büyük bir ilgi duydum. Bilgisayar oyunları oynarken zamanla bu oyunların nasıl yapıldığını merak etmeye başladım. Bu merakım beni yazılım dünyasına yönlendirdi.
+                </p>
+
+                <p>
+                    Eğitim hayatıma İzmir Güzelbahçe Alibayırlar İlkokulu ve Ortaokulu’nda başladım. Ardından İzmir Güzelbahçe Şehit Abdullah Tayyip Olçok Anadolu İmam Hatip ve Proje Lisesi’nde lise öğrenimimi tamamladım.
+                </p>
+
+                <p>
+                    Şu anda <strong>Bilecik Şeyh Edebali Üniversitesi</strong> Bilgisayar Programcılığı bölümünde eğitimime devam ediyorum. Üniversitedeki derslerim sayesinde programlama temellerini, algoritma mantığını ve web teknolojilerini öğreniyorum. 
+                </p>
+
+                <p>
+                    Aynı zamanda kendi projelerimi geliştirmek ve yeni şeyler denemek için boş zamanlarımda <strong>Unity</strong> ile basit oyunlar, HTML ve CSS kullanarak küçük web sayfaları tasarlıyorum.
+                </p>
+                
+                <p style="background-color: #ecf0f1; padding: 15px; border-radius: 5px; border-left: 5px solid #3498db; margin-top: 20px; font-style: italic;">
+                    "Teknolojiye olan ilgim sadece oyun oynamakla sınırlı kalmadı; artık üreten tarafta olmayı, fikirlerimi dijital ortama aktarmayı seviyorum. Amacım, yazılım alanında kendimi daha da geliştirerek hem yaratıcı hem de faydalı projeler ortaya koymak."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projelerPenceresi" class="sayfa-icerik">
+        
+        <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+            <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                Projelerim
+            </h1>
+        </div>
+
+        <h2 class="kategori-baslik"><span>💻 Web & YouTube</span></h2>
+
+        <div class="proje-kapsayici">
+            <div class="proje-kart">
+                <img src="foto/website.jpg" alt="ÖDEVLER">
+                <div class="kart-icerik">
+                    <h3>Web Sitesi Projelerim</h3>
+                    <p> Bugüne Kadar Derslerde  Ödev Olarak Verilen Web Sitesi Projelerim.</p>
+<a href="javascript:void(0)" onclick="sayfaDegistir('odevlerPenceresi')" class="proje-btn">Ödevlerime Git</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="https://yt3.googleusercontent.com/NjRs8KRKEDPDKbHoxmAhMMnj_KsO-OgUER0nlEDqH9t4TF4drmGLzcIYEt0rrnZxtueXJB0T1w=s160-c-k-c0x00ffffff-no-rj" alt="YouTube Kanal">
+                <div class="kart-icerik">
+                    <h3>Tan Teknoloji</h3>
+                    <p>C# dersleri, yazılım maceralarım ve teknoloji üzerine videolar çektiğim YouTube kanalım.</p>
+                    <a href="https://www.youtube.com/watch?v=5LFwRNDfRCE" target="_blank" class="proje-btn">Kanala Git</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="kategori-baslik"><span>🎮 Oyun Projelerim</span></h2>
+        
+        <div class="proje-kapsayici">
+            <div class="proje-kart">
+                <img src="foto/oguzkhann.png" alt="Oğuz Kağan"> 
+                <div class="kart-icerik">
+                    <h3>Oğuz Kağan Destanı</h3>
+                    <p>Türk mitolojisinden esinlenerek Unity ile geliştirdiğim 2D aksiyon platform oyunu.</p>
+                    <a href="#" class="proje-btn">Detaylar</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="foto/tangame.png" alt="Unity Oyun">
+                <div class="kart-icerik">
+                    <h3>Tan Game</h3>
+                    <p>C# ve Unity kullanarak geliştirdiğim, 3D VE 2D Oyun Projeler.</p>
+                    <a href="#" class="proje-btn">Detaylar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="odevlerPenceresi" class="sayfa-icerik">
+    
+    <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+        <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            Web Tasarımı Ödevlerim
+        </h1>
+        <p style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-size: 18px;">Hocamızın verdiği projeler ve yaptığım çalışmalar</p>
+    </div>
+
+    <div class="proje-kapsayici">
+        
+        <div class="proje-kart">
+            <img src="foto/ben.jpeg" alt="İlk Ödevim"> 
+            <div class="kart-icerik">
+                <h3>Kişisel CV Sayfası</h3>
+                <p>HTML Ve Css temellerini öğrenirken yaptığım ilk profesyonel CV ödevi.</p>
+                <a href="file:///C:/Users/2005i/Desktop/İsmailTan/iindex.html#" target="_blank" class="proje-btn">Ödevi Aç</a>
+            </div>
+        </div>
+
+        <div class="proje-kart">
+            <img src="foto/website.jpg" alt="İkinci Ödev">
+            <div class="kart-icerik">
+                <h3>Html Tagları Tanıtımı Ödevi</h3>
+                <p>CSS ve html kullanrak hazırladığım html tagları ödevi.</p>
+                <a href="htmlodev.html#" target="_blank" class="proje-btn">Ödevi Aç</a>
+            </div>
+        </div>
+
+        <div class="proje-kart">
+            <img src="foto/odev3.jpg" alt="Üçüncü Ödev">
+            <div class="kart-icerik">
+                <h3>Table Tagı İle Kutu Modelleri</h3>
+                <p>Mobil uyumlu (Responsive) tasarım ödevimiz için hazırladığım proje.</p>
+                <a href="odev3/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script>
+        // Menü Aç/Kapa
+        function menuyuAcKapa() {
+            var menu = document.getElementById("yanMenu");
+            menu.classList.toggle("aktif");
+        }
+
+        // Sayfa Değiştirme (SPA Mantığı)
+        function sayfaDegistir(gosterilecekId) {
+            // 1. Tüm sayfaları gizle
+            var tumSayfalar = document.querySelectorAll('.sayfa-icerik');
+            tumSayfalar.forEach(function(sayfa) {
+                sayfa.style.display = 'none';
+            });
+
+            // 2. Seçilen sayfayı göster
+            var secilenSayfa = document.getElementById(gosterilecekId);
+            if (secilenSayfa) {
+                secilenSayfa.style.display = 'block';
+            }
+            
+            // 3. Mobildeysek ve menü açıksa sayfayı değiştirince menüyü kapat
+            var menu = document.getElementById("yanMenu");
+            if (window.innerWidth < 768 && menu.classList.contains('aktif')) {
+                menu.classList.remove('aktif');
+            }
+        }
+    </script>
+
+</body>
+</html>
