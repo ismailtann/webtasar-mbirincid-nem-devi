@@ -207,9 +207,19 @@
                 menu.classList.remove('aktif');
             }
         }
+        window.onload = function() {
+    // Eğer linkin sonunda #odevler varsa direkt orayı aç
+    if(window.location.hash === "#odevler") {
+        sayfaDegistir('odevlerPenceresi');
+    } else {
+        // Varsayılan olarak ana sayfayı aç (isteğe bağlı)
+        sayfaDegistir('anaSayfaPenceresi');
+    }
+};
     </script>
 
 </body>
 
 </html>
+
 
