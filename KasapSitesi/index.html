@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAN-ET | Gurme Kasap & Steakhouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav class="header">
+        <div class="logo">TAN-<span>ET</span></div>
+        <ul class="menu">
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#urunler">Ürünler</a></li>
+            <li><a href="#neden-biz">Neden Biz?</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section id="anasayfa" class="hero">
+        <div class="hero-text">
+            <h1>ETİN EN <span>ASİL</span> HALİ</h1>
+            <p>TAN soyadının güvencesiyle, çiftlikten sofranıza lezzet yolculuğu.</p>
+            <a href="#urunler" class="buton">LEZZETLERİ İNCELE</a>
+        </div>
+    </section>
+
+    <section id="urunler" class="container">
+        <h2 class="baslik">Özel Kesimlerimiz</h2>
+        <div class="kart-grid">
+            
+            <div class="urun-kart">
+                <div class="resim-alan" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_Sxa9erj_2LmWB1Cf34A0g4m10DNlvYuMA&s')"></div>
+                <div class="icerik">
+                    <h3>Dallas Steak</h3>
+                    <p>Özel yöntemlerle 28 gün dinlendirilmiş enfes lezzet.</p>
+                    <span class="fiyat">1.449,90 TL</span>
+                    <button class="siparis-btn" onclick="siparisVer('Dallas Steak')">Sipariş Ver</button>
+                </div>
+            </div>
+
+            <div class="urun-kart">
+                <div class="resim-alan" style="background-image: url('https://images.unsplash.com/photo-1602192103300-47e66756152e?q=80&w=500')"></div>
+                <div class="icerik">
+                    <h3>Kuzu Kafes</h3>
+                    <p>Taze kekik ve özel marinasyon ile hazırlanmış kuzu eti.</p>
+                    <span class="fiyat">1.100,00 TL</span>
+                    <button class="siparis-btn" onclick="siparisVer('Kuzu Kafes')">Sipariş Ver</button>
+                </div>
+            </div>
+
+            <div class="urun-kart">
+                <div class="resim-alan" style="background-image: url('https://images.unsplash.com/photo-1588168333986-5078d3ae3976?q=80&w=500')"></div>
+                <div class="icerik">
+                    <h3>Özel Tan Köfte</h3>
+                    <p>TAN-ET ailesinin gizli reçetesiyle hazırlanan efsane köfte.</p>
+                    <span class="fiyat">680,00 TL</span>
+                    <button class="siparis-btn" onclick="siparisVer('Tan Köfte')">Sipariş Ver</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="neden-biz" class="neden-biz-alan">
+        <div class="container">
+            <h2 class="baslik">Neden TAN-ET?</h2>
+            <div class="neden-icerik">
+                <div class="metin-tarafi">
+                    <h3>30 Yıllık Tecrübe, Değişmeyen Lezzet</h3>
+                    <p>TAN-ET olarak biz, sadece et satmıyoruz; bir aile geleneğini sofralarınıza taşıyoruz. Her zaman en kaliteli besi çiftlikleriyle çalışıyoruz.</p>
+                    <p><strong>Hijyen ve Güven:</strong> Tüm ürünlerimiz veteriner kontrolünden geçtikten sonra uzman kasaplarımız tarafından titizlikle işlenir.</p>
+                </div>
+                
+                <div class="istatistik-tarafi">
+                    <div class="sayac-kutu">
+                        <h2 class="numara" data-target="30">0</h2>
+                        <p>Yıllık Tecrübe</p>
+                    </div>
+                    <div class="sayac-kutu">
+                        <h2 class="numara" data-target="1500">0</h2>
+                        <p>Mutlu Müşteri</p>
+                    </div>
+                    <div class="sayac-kutu">
+                        <h2 class="numara" data-target="100">0</h2>
+                        <p>Yerli Besi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="container">
+        <h2 class="baslik">Bize Ulaşın</h2>
+        <div class="iletisim-kutu">
+            <form id="kasap-formu">
+                <input type="text" id="ad" placeholder="Adınız Soyadınız" required>
+                <input type="email" id="eposta" placeholder="E-posta Adresiniz" required>
+                <textarea id="mesaj" placeholder="Sipariş notunuz veya mesajınız..." rows="5"></textarea>
+                <button type="submit" class="buton">Mesajı Gönder</button>
+            </form>
+            <div id="form-sonuc"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TAN-ET Kasap & Steakhouse. Tasarım: İsmail Tan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

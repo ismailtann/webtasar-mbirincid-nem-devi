@@ -1,0 +1,87 @@
+:root {
+    --ana-renk: #e63946;
+    --koyu-renk: #0b0b0b;
+    --gri-renk: #1c1c1c;
+    --yazi-renk: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--koyu-renk);
+    color: var(--yazi-renk);
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigasyon */
+.header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: rgba(0, 0, 0, 0.95);
+    border-bottom: 2px solid var(--ana-renk); position: fixed; width: 100%; z-index: 1000;
+}
+
+.logo { font-family: 'Oswald', sans-serif; font-size: 2.2rem; }
+.logo span { color: var(--ana-renk); }
+
+.menu { display: flex; list-style: none; }
+.menu li a { color: white; text-decoration: none; margin-left: 25px; font-weight: 500; transition: 0.3s; }
+.menu li a:hover { color: var(--ana-renk); }
+
+/* Hero Bölümü */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1500');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+}
+
+.hero h1 { font-family: 'Oswald', sans-serif; font-size: 4rem; }
+.hero h1 span { color: var(--ana-renk); }
+
+.buton {
+    display: inline-block; margin-top: 25px; padding: 12px 35px;
+    background: var(--ana-renk); color: white; text-decoration: none;
+    font-weight: bold; border-radius: 5px; transition: 0.4s; border: none; cursor: pointer;
+}
+
+/* Ürünler */
+.container { padding: 80px 8%; }
+.baslik { text-align: center; font-family: 'Oswald'; font-size: 2.5rem; margin-bottom: 40px; color: var(--ana-renk); }
+
+.kart-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
+}
+
+.urun-kart { background: var(--gri-renk); border-radius: 10px; overflow: hidden; transition: 0.3s; text-align: center; }
+.urun-kart:hover { transform: translateY(-10px); }
+
+.resim-alan { height: 200px; background-size: cover; background-position: center; }
+.icerik { padding: 20px; }
+.fiyat { color: var(--ana-renk); font-weight: bold; font-size: 1.2rem; display: block; margin: 10px 0; }
+
+.siparis-btn {
+    padding: 8px 20px; background: transparent; border: 1px solid var(--ana-renk);
+    color: var(--ana-renk); cursor: pointer; border-radius: 5px; transition: 0.3s;
+}
+.siparis-btn:hover { background: var(--ana-renk); color: white; }
+
+/* Neden Biz */
+.neden-biz-alan { background: #0f0f0f; padding: 80px 0; border-top: 1px solid #222; }
+.neden-icerik { display: flex; flex-wrap: wrap; gap: 50px; align-items: center; padding: 0 8%; }
+.metin-tarafi { flex: 2; }
+.metin-tarafi h3 { color: var(--ana-renk); font-family: 'Oswald'; font-size: 1.8rem; margin-bottom: 20px; }
+.istatistik-tarafi { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+
+.sayac-kutu { background: var(--gri-renk); padding: 20px; border-left: 4px solid var(--ana-renk); }
+.sayac-kutu h2 { color: var(--ana-renk); font-family: 'Oswald'; font-size: 2.2rem; }
+
+/* İletişim Formu */
+.iletisim-kutu { max-width: 600px; margin: 0 auto; background: var(--gri-renk); padding: 30px; border-radius: 15px; }
+#kasap-formu input, #kasap-formu textarea {
+    width: 100%; padding: 12px; margin-bottom: 15px; background: #000;
+    border: 1px solid #333; color: white; border-radius: 5px;
+}
+#form-sonuc { margin-top: 15px; color: #2ecc71; font-weight: bold; text-align: center; }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid #222; color: #777; }
