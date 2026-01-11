@@ -24,10 +24,10 @@
             <h3>İsmail Tan</h3>
             <p>Yazılım Öğrencisi</p>
         </div>
-        <a href="#" onclick="sayfaDegistir('anaSayfaPenceresi'); menuyuAcKapa()">Ana Sayfa</a>
-        <a href="#" onclick="sayfaDegistir('hakkimdaPenceresi'); menuyuAcKapa()">Hakkımda</a>
-        <a href="#" onclick="sayfaDegistir('projelerPenceresi'); menuyuAcKapa()">Projelerim</a>
-        <a href="#" onclick="sayfaDegistir('odevlerPenceresi'); menuyuAcKapa()">Ödevlerim</a>
+        <a href="javascript:void(0)" onclick="sayfaDegistir('anaSayfaPenceresi'); menuyuAcKapa()">Ana Sayfa</a>
+        <a href="javascript:void(0)" onclick="sayfaDegistir('hakkimdaPenceresi'); menuyuAcKapa()">Hakkımda</a>
+        <a href="javascript:void(0)" onclick="sayfaDegistir('projelerPenceresi'); menuyuAcKapa()">Projelerim</a>
+        <a href="javascript:void(0)" onclick="sayfaDegistir('odevlerPenceresi'); menuyuAcKapa()">Ödevlerim</a>
     </div>
 
     <div id="anaSayfaPenceresi" class="sayfa-icerik">
@@ -41,28 +41,9 @@
         </div>
     </div>
 
-    <div id="hakkimdaPenceresi" class="sayfa-icerik" style="display:none;">
-        <div class="hero-kutu">
-            <div class="hero-yazi"><h1>Hakkımda</h1><p>2005 İzmir doğumluyum...</p></div>
-        </div>
-    </div>
-
-    <div id="projelerPenceresi" class="sayfa-icerik" style="display:none;">
-        <div style="text-align: center;"><h1>Projelerim</h1></div>
-        <div class="proje-kapsayici">
-            <div class="proje-kart">
-                <img src="website.jpg">
-                <div class="kart-icerik">
-                    <h3>Web Projelerim</h3>
-                    <button onclick="sayfaDegistir('odevlerPenceresi')" class="proje-btn">Ödevlere Git</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="odevlerPenceresi" class="sayfa-icerik" style="display:none;">
         <div style="text-align: center;">
-            <h1 style="background: white; padding:15px; border-radius:15px;">Web Tasarımı Ödevlerim</h1>
+            <h1 style="background: white; padding:15px; border-radius:15px; color: #2c3e50;">Web Tasarımı Ödevlerim</h1>
         </div>
         <div class="proje-kapsayici">
             <div class="proje-kart">
@@ -73,37 +54,45 @@
                     <a href="KasapSitesi/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
 
     <script>
-        // Menü Aç/Kapa
+        // Menü Aç/Kapa Fonksiyonu
         function menuyuAcKapa() {
             var menu = document.getElementById("yanMenu");
-            menu.classList.toggle("aktif");
+            if (menu) {
+                menu.classList.toggle("aktif");
+            }
         }
 
         // Sayfa Değiştirme Fonksiyonu
         function sayfaDegistir(gosterilecekId) {
+            // Tüm sayfaları bul ve gizle
             var tumSayfalar = document.querySelectorAll('.sayfa-icerik');
-            tumSayfalar.forEach(function(sayfa) {
-                sayfa.style.display = 'none';
-            });
+            for (var i = 0; i < tumSayfalar.length; i++) {
+                tumSayfalar[i].style.display = 'none';
+            }
 
-            var secilenSayfa = document.getElementById(gosterilecekId);
-            if (secilenSayfa) {
-                secilenSayfa.style.display = 'block';
+            // Hedef sayfayı bul ve göster
+            var hedef = document.getElementById(gosterilecekId);
+            if (hedef) {
+                hedef.style.display = 'block';
             }
         }
 
-        // SİHİRLİ DOKUNUŞ: Linkte #odevler varsa orayı açar
-        window.onload = function() {
-            if(window.location.hash === "#odevler") {
+        // Sayfa yüklendiğinde linki kontrol eden fonksiyon
+        function baslangicKontrol() {
+            if (window.location.hash === "#odevler") {
                 sayfaDegistir('odevlerPenceresi');
             } else {
                 sayfaDegistir('anaSayfaPenceresi');
             }
-        };
+        }
+
+        // Olayları (Events) bağlayalım
+        window.addEventListener('load', baslangicKontrol);
+        window.addEventListener('hashchange', baslangicKontrol);
     </script>
 
 </body>
