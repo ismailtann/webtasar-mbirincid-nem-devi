@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Basit Kutu Modeli</title>
+    <style>
+        /* SIFIRLAMA */
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+        /* 1. ÜST KISIM (HEADER) */
+        .header {
+            background-color: #555; /* Koyu Gri */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 2. MENÜ */
+        .menu {
+            background-color: #333; /* Siyah */
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu a:hover { background-color: #ddd; color: black; }
+
+        /* 3. ORTA KISIM (KAPSAYICI) */
+        .kapsayici {
+            width: 100%;
+            overflow: auto; /* Float temizlemek için */
+        }
+
+        /* SOL TARAF (Ana Yazı) */
+        .ana-icerik {
+            float: left;
+            width: 70%; /* Ekranın %70'i */
+            background-color: #f1f1f1; /* Açık Gri */
+            height: 300px; /* Yükseklik olsun ki kutu görünsün */
+            padding: 10px;
+            box-sizing: border-box; /* Padding kutuyu şişirmesin diye */
+        }
+
+        /* SAĞ TARAF (Yan Menü) - Arkadaşında soldaydı, biz sağa aldık */
+        .yan-menu {
+            float: left;
+            width: 30%; /* Ekranın %30'u */
+            background-color: #ff9800; /* Turuncu */
+            height: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* 4. ALTTAKİ 4 KUTU */
+        .alt-kutu {
+            float: left;
+            width: 25%; /* 4 tane olduğu için %25 */
+            padding: 20px;
+            background-color: #ddd;
+            box-sizing: border-box;
+            border: 1px solid white; /* Kutular birbirine yapışmasın diye ince çizgi */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Web Tasarımı Ödevi</h1>
+    </div>
+
+    <div class="menu">
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </div>
+
+    <div class="kapsayici">
+        <div class="ana-icerik">
+            <h2>Ana İçerik Alanı</h2>
+            <p>Burası sayfanın ana yazı kısmıdır.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        
+        <div class="yan-menu">
+            <h3>Yan Panel</h3>
+            <p>Burası %30 genişliğinde.</p>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="alt-kutu">Kutu 1</div>
+        <div class="alt-kutu" style="background-color: #ccc;">Kutu 2</div> <div class="alt-kutu">Kutu 3</div>
+        <div class="alt-kutu" style="background-color: #ccc;">Kutu 4</div>
+    </div>
+
+</body>
+</html>

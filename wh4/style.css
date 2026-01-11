@@ -1,0 +1,11 @@
+.ozel-buton:hover {
+    background-color: #3498db; /* İlk Rengi (Mavi) */
+    color: white;              /* Yazı Rengi */
+    padding: 15px 30px;        /* Boyutu */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;           /* Üstüne gelince el işareti çıksın */
+    
+    /* SİHİRLİ KOD: Bu olmazsa animasyonlu geçiş olmaz */
+    transition: all 0.3s ease; 
+}

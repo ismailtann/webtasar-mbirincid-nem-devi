@@ -1,0 +1,17 @@
+a {
+    font-size: xx-large;
+  display: inline-block;     
+  color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       /* transform için gerekli */
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(1.5);
+}
+p{
+    color: blue;
+ font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hızlı Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body { background: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 50px; }
+        
+        .kart { 
+            background: #000; border: 2px solid #ff8c00; 
+            padding: 20px; border-radius: 15px; 
+            display: inline-block; width: 300px;
+            box-shadow: 0 0 15px rgba(255,140,0,0.2);
+        }
+
+        .buton-grubu { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+
+        button { 
+            background: #ff8c00; border: none; padding: 10px; 
+            font-weight: bold; border-radius: 5px; cursor: pointer; 
+        }
+
+        .ikincil { background: none; border: 1px solid #ff8c00; color: #ff8c00; }
+        
+        #demo { color: #ff8c00; font-weight: bold; min-height: 20px; }
+        
+        audio { width: 100%; margin-top: 10px; height: 30px; filter: invert(1); }
+    </style>
+</head>
+<body>
+
+    <div class="kart">
+        <p id="demo">Bir işlem seçin</p>
+        
+        <div class="buton-grubu">
+            <button onclick="$('#demo').text(new Date().toLocaleString('tr-TR'))">Tarih Göster</button>
+            <button id="gizle" class="ikincil">Yazıları Gizle</button>
+            <button id="goster" class="ikincil">Geri Getir</button>
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#gizle").click(function(){ $("p").fadeOut(); });
+            $("#goster").click(function(){ $("p").fadeIn(); });
+        });
+    </script>
+
+</body>
+</html>

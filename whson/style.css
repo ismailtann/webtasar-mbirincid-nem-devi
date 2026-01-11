@@ -1,0 +1,148 @@
+/* Genel Temizlik */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Üst Navigasyon */
+.nav-bar {
+    background-color: #000;
+    padding: 20px;
+    border-bottom: 2px solid #ff8c00;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-baslik {
+    color: #ff8c00;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+}
+
+/* Ana İçerik Alanı */
+.konteynir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.kart {
+    background-color: #000;
+    border: 2px solid #ff8c00;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.15);
+}
+
+h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+.yazi-alani {
+    min-height: 120px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.cizgi {
+    border: 0.5px solid #333;
+    margin: 20px 0;
+}
+
+/* Dikey Buton Grubu */
+.buton-grubu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.modern-buton {
+    background-color: #ff8c00;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modern-buton:hover {
+    background-color: #ffa500;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+.ikincil-buton {
+    background-color: transparent;
+    color: #ff8c00;
+    border: 1px solid #ff8c00;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ikincil-buton:hover {
+    background-color: rgba(255, 140, 0, 0.1);
+}
+
+/* Audio Player */
+.ses-kutusu {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ses-kutusu span {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.muzik-calar {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    /* Player rengini turuncu tonlarına yakınlaştırır */
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(10deg);
+}
