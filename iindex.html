@@ -35,65 +35,155 @@
             <div class="hero-resim"><img src="ben.jpeg" alt="Profil"></div>
             <div class="hero-yazi">
                 <h1>Merhaba, Ben İsmail! 👋</h1>
-                <p>Teknolojiye tutkun bir yazılım öğrencisiyim.</p>
+                <p>Teknolojiye tutkun, öğrenmeye aç bir yazılım öğrencisiyim. Şu anda <strong>C#</strong>, <strong>Web Geliştirme</strong> ve <strong>Unity Oyun Programlama</strong> üzerine kendimi geliştiriyorum.</p>
+                <p>Projelerimi sergilediğim ve kendimden bahsettiğim kişisel web siteme hoş geldiniz.</p>
+                <br>
                 <button onclick="sayfaDegistir('projelerPenceresi')" class="proje-btn">Projelerimi İncele</button>
             </div>
         </div>
     </div>
 
-    <div id="odevlerPenceresi" class="sayfa-icerik" style="display:none;">
-        <div style="text-align: center;">
-            <h1 style="background: white; padding:15px; border-radius:15px; color: #2c3e50;">Web Tasarımı Ödevlerim</h1>
+    <div id="hakkimdaPenceresi" class="sayfa-icerik" style="display:none;">
+        <div class="hero-kutu">
+            <div class="hero-resim"><img src="ben.jpeg" alt="İsmail Tan"></div>
+            <div class="hero-yazi">
+                <h1>Hakkımda</h1>
+                <p>Merhaba, ben <strong>İsmail Tan</strong>. 2005 yılında İzmir/Konak’ta doğdum. Bilgisayar oyunları oynarken zamanla bu oyunların nasıl yapıldığını merak etmeye başladım. Bu merakım beni yazılım dünyasına yönlendirdi.</p>
+                <p>Eğitim hayatıma İzmir Güzelbahçe Alibayırlar İlkokulu ve Ortaokulu’nda başladım. Ardından İzmir Güzelbahçe Şehit Abdullah Tayyip Olçok Anadolu İmam Hatip ve Proje Lisesi’nde lise öğrenimimi tamamladım.</p>
+                <p>Şu anda <strong>Bilecik Şeyh Edebali Üniversitesi</strong> Bilgisayar Programcılığı bölümünde eğitimime devam ediyorum.</p>
+                <p style="background-color: #ecf0f1; padding: 15px; border-radius: 5px; border-left: 5px solid #3498db; margin-top: 20px; font-style: italic; color: #2c3e50;">
+                    "Teknolojiye olan ilgim sadece oyun oynamakla sınırlı kalmadı; artık üreten tarafta olmayı seviyorum. Amacım, yazılım alanında kendimi daha da geliştirerek faydalı projeler ortaya koymak."
+                </p>
+            </div>
         </div>
+    </div>
+
+    <div id="projelerPenceresi" class="sayfa-icerik" style="display:none;">
+        <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+            <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">Projelerim</h1>
+        </div>
+        <h2 class="kategori-baslik"><span>💻 Web & YouTube</span></h2>
         <div class="proje-kapsayici">
             <div class="proje-kart">
-                <img src="website.jpg">
+                <img src="website.jpg" alt="ÖDEVLER">
                 <div class="kart-icerik">
-                    <h3>TAN-ET Kasap Sitesi</h3>
-                    <p>Siyah-Kırmızı temalı profesyonel ödevim.</p>
-                    <a href="KasapSitesi/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                    <h3>Web Sitesi Projelerim</h3>
+                    <p>Bugüne Kadar Derslerde Ödev Olarak Verilen Web Sitesi Projelerim.</p>
+                    <button onclick="sayfaDegistir('odevlerPenceresi')" class="proje-btn">Ödevlerime Git</button>
+                </div>
+            </div>
+            <div class="proje-kart">
+                <img src="https://yt3.googleusercontent.com/NjRs8KRKEDPDKbHoxmAhMMnj_KsO-OgUER0nlEDqH9t4TF4drmGLzcIYEt0rrnZxtueXJB0T1w=s160-c-k-c0x00ffffff-no-rj" alt="YouTube Kanal">
+                <div class="kart-icerik">
+                    <h3>Tan Teknoloji</h3>
+                    <p>C# dersleri ve teknoloji üzerine videolar çektiğim YouTube kanalım.</p>
+                    <a href="https://www.youtube.com/watch?v=5LFwRNDfRCE" target="_blank" class="proje-btn">Kanala Git</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="kategori-baslik"><span>🎮 Oyun Projelerim</span></h2>
+        <div class="proje-kapsayici">
+            <div class="proje-kart">
+                <img src="oguzkhann.png" alt="Oğuz Kağan"> 
+                <div class="kart-icerik">
+                    <h3>Oğuz Kağan Destanı</h3>
+                    <p>Türk mitolojisinden esinlenerek Unity ile geliştirdiğim 2D aksiyon oyunu.</p>
+                    <a href="javascript:void(0)" class="proje-btn">Detaylar</a>
+                </div>
+            </div>
+            <div class="proje-kart">
+                <img src="tangame.png" alt="Unity Oyun">
+                <div class="kart-icerik">
+                    <h3>Tan Game</h3>
+                    <p>C# ve Unity kullanarak geliştirdiğim, 3D VE 2D Oyun Projeleri.</p>
+                    <a href="javascript:void(0)" class="proje-btn">Detaylar</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="odevlerPenceresi" class="sayfa-icerik" style="display:none;">
+        <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+            <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">Web Tasarımı Ödevlerim</h1>
+            <p style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-size: 18px;">Hocamızın verdiği projeler ve yaptığım çalışmalar</p>
+        </div>
+        <div class="proje-kapsayici">
+            <div class="proje-kart">
+                <img src="website.jpg" alt="Kasap"> 
+                <div class="kart-icerik">
+                    <h3>TAN-ET Kasap Sitesi</h3>
+                    <p>Siyah-Kırmızı temalı, profesyonel web tasarımı ödevim.</p>
+                    <a href="KasapSitesi/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+            <div class="proje-kart">
+                <img src="website.jpg" alt="HTML"> 
+                <div class="kart-icerik">
+                    <h3>Html Tagları Tanıtımı</h3>
+                    <p>CSS ve html kullanarak hazırladığım html tagları ödevi.</p>
+                    <a href="htmlodev.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+            <div class="proje-kart">
+                <img src="ben.jpeg" alt="CV"> 
+                <div class="kart-icerik">
+                    <h3>Kişisel CV Sayfası</h3>
+                    <p>HTML Ve Css temellerini öğrenirken yaptığım ilk profesyonel CV ödevi.</p>
+                    <a href="iindex.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 50px;">
+            <h2 class="baslik" style="text-align:center; color:white; margin-bottom:20px;">Bize Ulaşın</h2>
+            <div class="iletisim-kutu" style="max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                <form id="kasap-formu" style="display: flex; flex-direction: column; gap: 15px;">
+                    <input type="text" id="ad" placeholder="Adınız Soyadınız" required style="padding:10px; border-radius:5px; border:none;">
+                    <input type="email" id="eposta" placeholder="E-posta Adresiniz" required style="padding:10px; border-radius:5px; border:none;">
+                    <textarea id="mesaj" placeholder="Sipariş notunuz veya mesajınız..." rows="5" style="padding:10px; border-radius:5px; border:none;"></textarea>
+                    <button type="submit" class="proje-btn" style="cursor:pointer; border:none;">Mesajı Gönder</button>
+                </form>
+                <div id="form-sonuc" style="margin-top:15px; color: #2ecc71; text-align:center; font-weight:bold;"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TAN-ET Kasap & Steakhouse. Tasarım: İsmail Tan</p>
+    </footer>
+
     <script>
-        // Menü Aç/Kapa Fonksiyonu
         function menuyuAcKapa() {
             var menu = document.getElementById("yanMenu");
-            if (menu) {
-                menu.classList.toggle("aktif");
-            }
+            if(menu) menu.classList.toggle("aktif");
         }
 
-        // Sayfa Değiştirme Fonksiyonu
         function sayfaDegistir(gosterilecekId) {
-            // Tüm sayfaları bul ve gizle
             var tumSayfalar = document.querySelectorAll('.sayfa-icerik');
             for (var i = 0; i < tumSayfalar.length; i++) {
                 tumSayfalar[i].style.display = 'none';
             }
-
-            // Hedef sayfayı bul ve göster
             var hedef = document.getElementById(gosterilecekId);
-            if (hedef) {
-                hedef.style.display = 'block';
-            }
+            if (hedef) hedef.style.display = 'block';
         }
 
-        // Sayfa yüklendiğinde linki kontrol eden fonksiyon
-        function baslangicKontrol() {
-            if (window.location.hash === "#odevler") {
+        function kontrolEt() {
+            if(window.location.hash === "#odevler") {
                 sayfaDegistir('odevlerPenceresi');
             } else {
                 sayfaDegistir('anaSayfaPenceresi');
             }
         }
 
-        // Olayları (Events) bağlayalım
-        window.addEventListener('load', baslangicKontrol);
-        window.addEventListener('hashchange', baslangicKontrol);
-    </script>
+        window.addEventListener('load', kontrolEt);
+        window.addEventListener('hashchange', kontrolEt);
 
+        // İletişim formu simülasyonu
+        document.getElementById('kasap-formu')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('form-sonuc').innerText = "Mesajınız başarıyla iletildi!";
+            this.reset();
+        });
+    </script>
 </body>
 </html>
