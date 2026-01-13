@@ -11,7 +11,6 @@
 
     <div class="bar">
         <button class="icon" onclick="menuyuAcKapa()">☰</button>
-        
         <div class="buttonlar" onclick="sayfaDegistir('anaSayfaPenceresi')">Ana Sayfa</div>
         <div class="buttonlar" onclick="sayfaDegistir('hakkimdaPenceresi')">Hakkımda</div>
         <div class="buttonlar" onclick="sayfaDegistir('projelerPenceresi')">Projelerim</div>
@@ -20,13 +19,11 @@
 
     <div class="yan-panel" id="yanMenu">
         <button class="kapat-btn" onclick="menuyuAcKapa()">×</button>
-
         <div class="profil-bolumu">
             <img src="ben.jpeg" alt="İsmail Tan"> 
             <h3>İsmail Tan</h3>
             <p>Yazılım Öğrencisi</p>
         </div>
-
         <a href="javascript:void(0)" onclick="sayfaDegistir('anaSayfaPenceresi'); menuyuAcKapa()">Ana Sayfa</a>
         <a href="javascript:void(0)" onclick="sayfaDegistir('hakkimdaPenceresi'); menuyuAcKapa()">Hakkımda</a>
         <a href="javascript:void(0)" onclick="sayfaDegistir('projelerPenceresi'); menuyuAcKapa()">Projelerim</a>
@@ -40,17 +37,9 @@
             </div>
             <div class="hero-yazi">
                 <h1>Merhaba, Ben İsmail! 👋</h1>
-                <p>
-                    Teknolojiye tutkun, öğrenmeye aç bir yazılım öğrencisiyim. 
-                    Şu anda <strong>C#</strong>, <strong>Web Geliştirme</strong> ve <strong>Unity Oyun Programlama</strong> üzerine kendimi geliştiriyorum.
-                </p>
-                <p>
-                    Projelerimi sergilediğim ve kendimden bahsettiğim kişisel web siteme hoş geldiniz.
-                </p>
+                <p>Teknolojiye tutkun, öğrenmeye aç bir yazılım öğrencisiyim. Şu anda <strong>C#</strong>, <strong>Web Geliştirme</strong> ve <strong>Unity Oyun Programlama</strong> üzerine kendimi geliştiriyorum.</p>
                 <br>
-                <button onclick="sayfaDegistir('projelerPenceresi')" class="proje-btn">
-                    Projelerimi İncele
-                </button>
+                <button onclick="sayfaDegistir('projelerPenceresi')" class="proje-btn">Projelerim</button>
             </div>
         </div>
     </div>
@@ -62,175 +51,140 @@
             </div>
             <div class="hero-yazi">
                 <h1>Hakkımda</h1>
-                
-                <p>
-                    Merhaba, ben <strong>İsmail Tan</strong>. 2005 yılında İzmir/Konak’ta doğdum. Küçük yaşlardan itibaren bilgisayarlara, oyunlara ve teknolojiye büyük bir ilgi duydum. Bilgisayar oyunları oynarken zamanla bu oyunların nasıl yapıldığını merak etmeye başladım. Bu merakım beni yazılım dünyasına yönlendirdi.
-                </p>
-
-                <p>
-                    Eğitim hayatıma İzmir Güzelbahçe Alibayırlar İlkokulu ve Ortaokulu’nda başladım. Ardından İzmir Güzelbahçe Şehit Abdullah Tayyip Olçok Anadolu İmam Hatip ve Proje Lisesi’nde lise öğrenimimi tamamladım.
-                </p>
-
-                <p>
-                    Şu anda <strong>Bilecik Şeyh Edebali Üniversitesi</strong> Bilgisayar Programcılığı bölümünde eğitimime devam ediyorum. Üniversitedeki derslerim sayesinde programlama temellerini, algoritma mantığını ve web teknolojilerini öğreniyorum. 
-                </p>
-
-                <p>
-                    Aynı zamanda kendi projelerimi geliştirmek ve yeni şeyler denemek için boş zamanlarımda <strong>Unity</strong> ile basit oyunlar, HTML ve CSS kullanarak küçük web sayfaları tasarlıyorum.
-                </p>
-                
-                <p style="background-color: #ecf0f1; padding: 15px; border-radius: 5px; border-left: 5px solid #3498db; margin-top: 20px; font-style: italic;">
-                    "Teknolojiye olan ilgim sadece oyun oynamakla sınırlı kalmadı; artık üreten tarafta olmayı, fikirlerimi dijital ortama aktarmayı seviyorum. Amacım, yazılım alanında kendimi daha da geliştirerek hem yaratıcı hem de faydalı projeler ortaya koymak."
-                </p>
+                <p>Ben <strong>İsmail Tan</strong>. 2005 İzmir doğumluyum. Bilecik Şeyh Edebali Üniversitesi Bilgisayar Programcılığı öğrencisiyim.</p>
             </div>
         </div>
     </div>
 
     <div id="projelerPenceresi" class="sayfa-icerik" style="display:none;">
-        
-        <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
-            <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                Projelerim
-            </h1>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 class="baslik-stil">Projelerim</h1>
         </div>
-
-        <h2 class="kategori-baslik"><span>💻 Web & YouTube</span></h2>
-
         <div class="proje-kapsayici">
             <div class="proje-kart">
                 <img src="website.jpg" alt="ÖDEVLER">
                 <div class="kart-icerik">
-                    <h3>Web Sitesi Projelerim</h3>
-                    <p> Bugüne Kadar Derslerde  Ödev Olarak Verilen Web Sitesi Projelerim.</p>
-                    <a href="javascript:void(0)" onclick="sayfaDegistir('odevlerPenceresi')" class="proje-btn">Ödevlerime Git</a>
+                    <h3>Web Sitesi Ödevleri</h3>
+                    <p>Derslerde hazırladığım haftalık web projeleri.</p>
+                    <a href="javascript:void(0)" onclick="sayfaDegistir('odevlerPenceresi')" class="proje-btn">Ödevlere Git</a>
                 </div>
             </div>
-
-            <div class="proje-kart">
-                <img src="https://yt3.googleusercontent.com/NjRs8KRKEDPDKbHoxmAhMMnj_KsO-OgUER0nlEDqH9t4TF4drmGLzcIYEt0rrnZxtueXJB0T1w=s160-c-k-c0x00ffffff-no-rj" alt="YouTube Kanal">
-                <div class="kart-icerik">
-                    <h3>Tan Teknoloji</h3>
-                    <p>C# dersleri, yazılım maceralarım ve teknoloji üzerine videolar çektiğim YouTube kanalım.</p>
-                    <a href="https://www.youtube.com/watch?v=5LFwRNDfRCE" target="_blank" class="proje-btn">Kanala Git</a>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="kategori-baslik"><span>🎮 Oyun Projelerim</span></h2>
-        
-        <div class="proje-kapsayici">
             <div class="proje-kart">
                 <img src="oguzkhann.png" alt="Oğuz Kağan"> 
                 <div class="kart-icerik">
                     <h3>Oğuz Kağan Destanı</h3>
-                    <p>Türk mitolojisinden esinlenerek Unity ile geliştirdiğim 2D aksiyon platform oyunu.</p>
-                    <a href="javascript:void(0)" class="proje-btn">Detaylar</a>
-                </div>
-            </div>
- <div class="proje-kart">
-            <img src="ben.jpeg" alt="1.hafta"> 
-            <div class="kart-icerik">
-                <h3>Ödevlerim.</h3>
-                <p>1. hafta html  ödevi.</p>
-                <a href="wh1" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-             <div class="proje-kart">
-            <img src="ben.jpeg" alt="İlk Ödevim"> 
-            <div class="kart-icerik">
-                <h3>Kişisel CV Sayfası</h3>
-                <p>HTML Ve Css temellerini öğrenirken yaptığım ilk profesyonel CV ödevi.</p>
-                <a href="iindex.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-             <div class="proje-kart">
-            <img src="ben.jpeg" alt="İlk Ödevim"> 
-            <div class="kart-icerik">
-                <h3>Kişisel CV Sayfası</h3>
-                <p>HTML Ve Css temellerini öğrenirken yaptığım ilk profesyonel CV ödevi.</p>
-                <a href="iindex.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-            <div class="proje-kart">
-                <img src="tangame.png" alt="Unity Oyun">
-                <div class="kart-icerik">
-                    <h3>Tan Game</h3>
-                    <p>C# ve Unity kullanarak geliştirdiğim, 3D VE 2D Oyun Projeler.</p>
-                    <a href="javascript:void(0)" class="proje-btn">Detaylar</a>
+                    <p>Unity ile geliştirdiğim 2D aksiyon oyunu.</p>
+                    <a href="#" class="proje-btn">Detaylar</a>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div id="odevlerPenceresi" class="sayfa-icerik" style="display:none;">
-    
-    <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
-        <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-            Web Tasarımı Ödevlerim
-        </h1>
-        <p style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); font-size: 18px;">Hocamızın verdiği projeler ve yaptığım çalışmalar</p>
+        <div style="text-align: center; color: #2c3e50; margin-bottom: 30px;">
+            <h1 style="background: rgba(255,255,255,0.9); display:inline-block; padding:15px 40px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                Web Tasarımı Ödevlerim
+            </h1>
+            <p style="color: #333; font-size: 18px; margin-top: 10px;">Haftalık Uygulamalar (WH1 - WH9)</p>
+        </div>
+
+        <div class="proje-kapsayici">
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH1">
+                <div class="kart-icerik">
+                    <h3>1. Hafta (WH1)</h3>
+                    <p>HTML Giriş ve Temel Etiketler.</p>
+                    <a href="wh1/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH2">
+                <div class="kart-icerik">
+                    <h3>2. Hafta (WH2)</h3>
+                    <p>CSS Temelleri ve Stil İşlemleri.</p>
+                    <a href="wh2/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH3">
+                <div class="kart-icerik">
+                    <h3>3. Hafta (WH3)</h3>
+                    <p>Box Model ve Yerleşim Düzenleri.</p>
+                    <a href="wh3/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH4">
+                <div class="kart-icerik">
+                    <h3>4. Hafta (WH4)</h3>
+                    <p>Flexbox ve Responsive Tasarım.</p>
+                    <a href="wh4/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH5">
+                <div class="kart-icerik">
+                    <h3>5. Hafta (WH5)</h3>
+                    <p>Form Yapıları ve İnteraktif Öğeler.</p>
+                    <a href="wh5/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH6">
+                <div class="kart-icerik">
+                    <h3>6. Hafta (WH6)</h3>
+                    <p>Grid Sistemi ve Modern Layoutlar.</p>
+                    <a href="wh6/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH7">
+                <div class="kart-icerik">
+                    <h3>7. Hafta (WH7)</h3>
+                    <p>Animasyonlar ve Geçiş Efektleri.</p>
+                    <a href="wh7/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH8">
+                <div class="kart-icerik">
+                    <h3>8. Hafta (WH8)</h3>
+                    <p>JavaScript ile DOM Manipülasyonu.</p>
+                    <a href="wh8/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+
+            <div class="proje-kart">
+                <img src="website.jpg" alt="WH9">
+                <div class="kart-icerik">
+                    <h3>9. Hafta (WH9)</h3>
+                    <p>Final Projesi Taslak Çalışması.</p>
+                    <a href="wh9/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="proje-kapsayici">
-        
-        <div class="proje-kart">
-            <img src="website.jpg" alt="Kasap Projesi"> 
-            <div class="kart-icerik">
-                <h3>TAN-ET Kasap Sitesi</h3>
-                <p>Siyah-Kırmızı temalı, profesyonel web tasarımı ödevim.</p>
-                <a href="KasapSitesi/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-
-        <div class="proje-kart">
-            <img src="ben.jpeg" alt="İlk Ödevim"> 
-            <div class="kart-icerik">
-                <h3>Kişisel CV Sayfası</h3>
-                <p>HTML Ve Css temellerini öğrenirken yaptığım ilk profesyonel CV ödevi.</p>
-                <a href="iindex.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-
-        <div class="proje-kart">
-            <img src="website.jpg" alt="İkinci Ödev">
-            <div class="kart-icerik">
-                <h3>Html Tagları Tanıtımı Ödevi</h3>
-                <p>CSS ve html kullanrak hazırladığım html tagları ödevi.</p>
-                <a href="htmlodev.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-
-        <div class="proje-kart">
-            <img src="odev3.jpg" alt="Üçüncü Ödev">
-            <div class="kart-icerik">
-                <h3>Table Tagı İle Kutu Modelleri</h3>
-                <p>Mobil uyumlu (Responsive) tasarım ödevimiz için hazırladığım proje.</p>
-                <a href="wh1/index.html" target="_blank" class="proje-btn">Ödevi Aç</a>
-            </div>
-        </div>
-
-    </div>
-</div>
 
     <script>
-        // Menü Aç/Kapa
         function menuyuAcKapa() {
             var menu = document.getElementById("yanMenu");
             if(menu) menu.classList.toggle("aktif");
         }
 
-        // Sayfa Değiştirme (SPA Mantığı)
         function sayfaDegistir(gosterilecekId) {
             var tumSayfalar = document.querySelectorAll('.sayfa-icerik');
             tumSayfalar.forEach(function(sayfa) {
                 sayfa.style.display = 'none';
             });
-
             var secilenSayfa = document.getElementById(gosterilecekId);
-            if (secilenSayfa) {
-                secilenSayfa.style.display = 'block';
-            }
+            if (secilenSayfa) secilenSayfa.style.display = 'block';
             
             var menu = document.getElementById("yanMenu");
             if (window.innerWidth < 768 && menu && menu.classList.contains('aktif')) {
@@ -238,7 +192,6 @@
             }
         }
 
-        // OTOMATİK ÖDEVLERİ AÇMA KODU
         window.onload = function() {
             if(window.location.hash === "#odevler") {
                 sayfaDegistir('odevlerPenceresi');
@@ -246,16 +199,7 @@
                 sayfaDegistir('anaSayfaPenceresi');
             }
         };
-
-        // Hash değişirse (linke sonradan # eklenirse) de çalışsın
-        window.onhashchange = function() {
-            if(window.location.hash === "#odevler") {
-                sayfaDegistir('odevlerPenceresi');
-            }
-        };
     </script>
 
 </body>
 </html>
-
-
